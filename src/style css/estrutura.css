@@ -11,6 +11,7 @@ body{
 a{
     text-decoration: none;
     font-size: 2.5rem;
+    font-family: 'Alfa Slab One', cursive;
 }
 a:hover{
     font-size: 3rem;
@@ -18,7 +19,7 @@ a:hover{
 }
 .teste{
     border-radius: 2px;
-    border: 2px solid purple;
+    border: 2px solid rgb(253, 253, 253);
     background-color: black;
     display: flex;
     flex-direction:column;
@@ -34,7 +35,7 @@ a:hover{
     width:500px;
     background-color: purple;
     border-radius:5px;
-    border: 2px solid;
+    border: 2px solid ;
     align-items: center;
     display:flex;
     justify-content: center;
@@ -65,6 +66,7 @@ a:hover{
 .créditos a{
     color: white;
     font-weight: 900;
+    font-family: 'Alfa Slab One', cursive;
 
 }
 #titulo{
@@ -81,6 +83,7 @@ a:hover{
 }
 .dica p{
     font-size: 0rem;
+    font-family: 'Alfa Slab One', cursive;
 }
 .dica:hover p{
     font-size: 1.5rem;
@@ -88,6 +91,7 @@ a:hover{
 }
 .dica h2{
     font-size: 1.5rem;
+    font-family: 'Alfa Slab One', cursive;
 }
 .dica:hover h2{
     font-size: 0rem;
@@ -101,4 +105,11 @@ a:hover{
     height: 100px;
     width: 150px;
     transition: ease 1s;
+}
+.respostas a{
+    color: white;
+    font-family: 'Alfa Slab One', cursive;
+}
+p{
+    font-family: 'Alfa Slab One', cursive;
 }
