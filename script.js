@@ -1,10 +1,5 @@
-alert("Site em criação");
+function teste() {
+    alert('Nossa como ele se acha goat, achou um botão no fvcking MEIO DA TELA. Para de perder tempo e vai fzr o quiz irmão. SONbrero. parmeSON. SONsung. samSONg.');
+};
 
-var nome = 'Davi';
-alert(nome);
-
-nome='toddinho';
-alert(nome);
-
-let sobreNome = "uchira220";
-alert(nome+''+sobreNome);
+const nome= prompt('Entre com seu nome');
