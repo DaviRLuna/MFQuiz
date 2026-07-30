@@ -17,6 +17,23 @@ a:hover{
     font-size: 3rem;
     transition: ease 1s;
 }
+p{
+    color: white;
+}
+.botao-texto{
+    background: none;
+    border: none;
+    padding: 10;
+    font: inherit;
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+    cursor: pointer;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-family: 'Alfa Slab One', cursive;
+
+}
 .teste{
     border-radius: 2px;
     border: 2px solid rgb(253, 253, 253);
@@ -80,31 +97,7 @@ a:hover{
     flex-direction:row;
     align-items: center;
     padding: 30px;
-}
-.dica p{
-    font-size: 0rem;
-    font-family: 'Alfa Slab One', cursive;
-}
-.dica:hover p{
-    font-size: 1.5rem;
-    transition: ease 1s;
-}
-.dica h2{
-    font-size: 1.5rem;
-    font-family: 'Alfa Slab One', cursive;
-}
-.dica:hover h2{
-    font-size: 0rem;
-    transition: ease 1s;
-}
-.dica img{
-    height:0px;
-    width:0px;
-}
-.dica:hover img{
-    height: 100px;
-    width: 150px;
-    transition: ease 1s;
+    gap: 10px;
 }
 .respostas a{
     color: white;

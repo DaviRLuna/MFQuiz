@@ -3,3 +3,19 @@ function teste() {
 };
 
 const nome= prompt('Entre com seu nome');
+
+const botao =
+    document.getElementById("Botaodica");
+const dica =
+    document.getElementById("meuTexto");
+
+    botao.addEventListener("click", function() {
+        if (dica.style.display === "none") {
+            dica.style.display = "block";
+            botao.innerText = "Fechar dica";
+        } 
+        else {
+            dica.style.display = "none";
+            botao.innerText = "dica";
+        }
+    });
