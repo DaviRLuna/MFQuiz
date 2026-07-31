@@ -19,3 +19,20 @@ const dica =
             botao.innerText = "dica";
         }
     });
+
+    let estado = 1;
+
+    const TituloElement = document.getElementById('Titulo');
+    const ImagemElement = document.getElementById('Imagem');
+    const RespostaCertaElement = document.getElementById('Resposta.C');
+    const RespostaErradaElement = document.getElementById('Resposta.E');
+    const TituloElement = document.getElementById('Titulo');
+    const botao = document.getElementById('Botaodica');
+
+    function verificarResposta(RespostaSelecionada){
+        if(etapa === 1){
+            if(RespostaSelecionada === 'Errada'){
+                cons
+            }
+        }
+    }
