@@ -7,36 +7,49 @@
     <title>Página principal</title>
 </head>
 <body>
-    <header>
+    <header id="Pergunta">
         <section class="teste">
-            <h1 id="Titulo">QUEM GANHARIA EM UMA LUTA?</h1>
+            <h1 id="titulo">Carregando pergunta...</h1>
             <article>
-                <img id="Imagem" src="../assets/aaa.png"
+                <img id="Imagem" src=""
                 heigth="50px"
                 width="400px";>
             </article>
         </section>
     </header>
-    <main>
-        <section>
-            <article class="respostas">
-                <button id="Resposta.E" onclick="verificarResposta('Errada')">A.BEBE DORMINDO</button>
+    <main id="respostas">
+        <section class="respostas">
+            <article>
+                <h2 id="opcao1" class="botao-texto" onclick="selectOption(0)">Opção 1</h2>
             </article>
         </section>
         <section>
             <article class="respostas">
-            <button id="Resposta.C" onclick="verificarResposta('Certa')">B.BURACO NEGRO </button>
+            <h2 id="opcao2" class="botao-texto" onclick="selectOption(1)">Opção 2</h2>
             </article>
         </section>
     </main>
     <footer class="créditos">
-        <section class="dica">
-            <button id="Botaodica" class="botao-texto">dica</button>
-            <p id="meuTexto" style="display: none;">PENSE MARK! O BEBE ESTA DORMINDO, NÃO IRÁ PODER SE DEFENDER</p>
+        <section class="tela-escondida" id="tela-de-derrota">
+            <article>
+                <h1 style="color: red;">PERDEU KKKKKKKKKKKKKKKK</h1>
+                <p>"AS RESPOSTAS SÃO CLARAS PARA O ALFA, MAS PARA O BETA ELAS SÃO DOLOROSAS"</p>
+                <img src="../assets/PARABÉNS.png">
+                    <article class="respostas">
+                    <h2 id="opcao2" class="botao-texto" onclick="recomeço()">RECOMEÇAR</h2>
+                    </article>
+                    <article class="respostas">
+                    <h2 id="opcao2" class="botao-texto" onclick="selectOption(1)">Opção 2</h2>
+                    </article>
+            </article>
         </section>
+        <section class="dica" id="dica">
+            <button id="Botaodica" class="botao-texto">DICA</button>
+            <p id="meuTexto" style="display: none;">PENSE MARK! O BEBE ESTA DORMINDO, NÃO IRÁ PODER SE DEFENDER</p>
         <article>
             <a href="../../index.html">VOLTAR</a>
         </article>
+        </section>
     </footer>
     <script src="../../script.js"></script>
 </body>

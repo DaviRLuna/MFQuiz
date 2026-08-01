@@ -32,6 +32,7 @@ p{
     text-decoration: none;
     font-size: 2.5rem;
     font-family: 'Alfa Slab One', cursive;
+    transition: 2s ease
 
 }
 .teste{
@@ -50,7 +51,7 @@ p{
 .respostas{
     height:100px;
     width:500px;
-    background-color: purple;
+    background-color: rgb(128,0,128);
     border-radius:5px;
     border: 2px solid ;
     align-items: center;
@@ -73,12 +74,14 @@ p{
     font-size: 1.2rem;
     display: flex;
     flex-direction:center;
-    text-align: column;
+    justify-content: center;
+    text-align: center;
     border: 2px solid;
-    height: 200px;
+    height: auto;
     width:1200px;
     gap: 10px;
-    align-items:center
+    align-items:center;
+    padding: 10px;
 }
 .créditos a{
     color: white;
@@ -89,12 +92,14 @@ p{
 #titulo{
     font-size: 4rem;
     color: red;
+    font-family: 'Alfa Slab One', cursive;
 }
 .dica{
-    height: 100px;
+    height: auto;
     width: 1000px;
     display: flex;
     flex-direction:row;
+    justify-content: center;
     align-items: center;
     padding: 30px;
     gap: 10px;
@@ -105,4 +110,7 @@ p{
 }
 p{
     font-family: 'Alfa Slab One', cursive;
+}
+.tela-escondida{
+    display: none !important;
 }
