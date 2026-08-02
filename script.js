@@ -1,8 +1,3 @@
-function teste() {
-    alert('Nossa como ele se acha goat, achou um botão no fvcking MEIO DA TELA. Para de perder tempo e vai fzr o quiz irmão. SONbrero. parmeSON. SONsung. samSONg.');
-};
-
-const nome= prompt('Entre com seu nome');
 
 const botao =
     document.getElementById("Botaodica");
@@ -66,7 +61,7 @@ const dica =
         document.getElementById("respostas").classList.add("tela-escondida");
         document.getElementById("dica").classList.add("tela-escondida");
         document.getElementById("tela-de-derrota").classList.remove("tela-escondida");
-        document.getElementById("respostas").style.display = "none";
+        document.getElementById("tela-de-vitoria").classList.add("tela-escondida");
     }
     function recomeço() {
 
@@ -76,9 +71,17 @@ const dica =
         document.getElementById("respostas").classList.remove("tela-escondida");
         document.getElementById("dica").classList.remove("tela-escondida");
         document.getElementById("tela-de-derrota").classList.add("tela-escondida");
-        document.getElementById("respostas").style.display = "block";
+        document.getElementById("tela-de-vitoria").classList.add("tela-escondida");
 
         ShowQuestion();
+    }
+    
+    function vitoria() {
+        document.getElementById("tela-de-vitoria").classList.remove("tela-escondida");
+        document.getElementById("Pergunta").classList.add("tela-escondida");
+        document.getElementById("respostas").classList.add("tela-escondida");
+        document.getElementById("dica").classList.add("tela-escondida");
+        document.getElementById("tela-de-derrota").classList.add("tela-escondida");
     }
     function ShowQuestion() {
         let perguntaAtual = quizFacilData[CurrentQuestionIndex];
@@ -94,10 +97,16 @@ const dica =
         let perguntaAtual = quizFacilData[CurrentQuestionIndex];
 
         if(option === perguntaAtual.correta) {
-            
-            
+
             CurrentQuestionIndex++;
-            ShowQuestion();
+        
+           if(CurrentQuestionIndex < quizFacilData.length) {
+
+              ShowQuestion();
+           }
+           else {
+                vitoria();
+           }
         }
         else {
             derrota();
