@@ -1,35 +1,38 @@
 
 const botao =
     document.getElementById("Botaodica");
-const dica =
+const dicatexto =
     document.getElementById("meuTexto");
 
     botao.addEventListener("click", function() {
-        if (dica.style.display === "none") {
-            dica.style.display = "block";
+        if (dicatexto.style.display === "none") {
+            dicatexto.style.display = "block";
             botao.innerText = "Fechar dica";
         } 
         else {
-            dica.style.display = "none";
+            dicatexto.style.display = "none";
             botao.innerText = "dica";
         }
     });
 
     const titulo = document.getElementById("titulo");
     const imagem = document.getElementById("Imagem");
-    const opção1 = document.getElementById("opcao1");
-    const opção2 = document.getElementById("opcao2");
+    const opcao1 = document.getElementById("opcao1");
+    const opcao2 = document.getElementById("opcao2");
+    const TVitoria = document.getElementById("tela-de-vitoria");
+    const TDerrota = document.getElementById("tela-de-derrota");
+    const CaixaPergunta = document.getElementById("Pergunta");
+    const CaixaResposta = document.getElementById("respostas");
+    const CaixaDica = document.getElementById("dica");
 
     let CurrentQuestionIndex = 0;
     function ShowQuestion() {
         let perguntaAtual = quizFacilData[CurrentQuestionIndex];
 
-         console.log("O JavaScript tentou carregar este caminho de imagem:", perguntaAtual.imagem);
-
-        document.getElementById("titulo").innerText = perguntaAtual.pergunta;
-        document.getElementById("Imagem").src = perguntaAtual.imagem;
-        document.getElementById("opcao1").innerText = perguntaAtual.opcoes[0];
-        document.getElementById("opcao2").innerText = perguntaAtual.opcoes[1];
+        titulo.innerText = perguntaAtual.pergunta;
+        imagem.src = perguntaAtual.imagem;
+        opcao1.innerText = perguntaAtual.opcoes[0];
+        opcao2.innerText = perguntaAtual.opcoes[1];
     }
     const quizFacilData = [
         {
@@ -57,40 +60,31 @@ const dica =
 
     function derrota() {
 
-        document.getElementById("Pergunta").classList.add("tela-escondida");
-        document.getElementById("respostas").classList.add("tela-escondida");
-        document.getElementById("dica").classList.add("tela-escondida");
-        document.getElementById("tela-de-derrota").classList.remove("tela-escondida");
-        document.getElementById("tela-de-vitoria").classList.add("tela-escondida");
+        CaixaPergunta.classList.add("tela-escondida");
+        CaixaResposta.classList.add("tela-escondida");
+        CaixaDica.classList.add("tela-escondida");
+        TDerrota.classList.remove("tela-escondida");
+        TVitoria.classList.add("tela-escondida");
     }
     function recomeço() {
 
         CurrentQuestionIndex = 0;
 
-        document.getElementById("Pergunta").classList.remove("tela-escondida");
-        document.getElementById("respostas").classList.remove("tela-escondida");
-        document.getElementById("dica").classList.remove("tela-escondida");
-        document.getElementById("tela-de-derrota").classList.add("tela-escondida");
-        document.getElementById("tela-de-vitoria").classList.add("tela-escondida");
+        CaixaPergunta.classList.remove("tela-escondida");
+        CaixaResposta.classList.remove("tela-escondida");
+        CaixaDica.classList.remove("tela-escondida");
+        TDerrota.classList.add("tela-escondida");
+        TVitoria.classList.add("tela-escondida");
 
         ShowQuestion();
     }
     
     function vitoria() {
-        document.getElementById("tela-de-vitoria").classList.remove("tela-escondida");
-        document.getElementById("Pergunta").classList.add("tela-escondida");
-        document.getElementById("respostas").classList.add("tela-escondida");
-        document.getElementById("dica").classList.add("tela-escondida");
-        document.getElementById("tela-de-derrota").classList.add("tela-escondida");
-    }
-    function ShowQuestion() {
-        let perguntaAtual = quizFacilData[CurrentQuestionIndex];
-
-        document.getElementById("titulo").innerText = perguntaAtual.pergunta;
-        document.getElementById("Imagem").src = perguntaAtual.imagem;
-        document.getElementById("opcao1").innerText = perguntaAtual.opcoes[0];
-        document.getElementById("opcao2").innerText = perguntaAtual.opcoes[1];
-        document.getElementById("meuTexto").innerText = perguntaAtual.dica;
+        TVitoria.classList.remove("tela-escondida");
+        CaixaPergunta.classList.add("tela-escondida");
+        CaixaResposta.classList.add("tela-escondida");
+        CaixaDica.classList.add("tela-escondida");
+        TDerrota.classList.add("tela-escondida");
     }
     function selectOption(option) {
 

@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="../style css/estrutura.css">
-    <title>Página principal</title>
+    <title>Modo fácil</title>
 </head>
 <body>
+    
     <header id="Pergunta">
-        <section class="teste">
+        <section class="CaixaCentral">
             <h1 id="titulo">Quem venceria em uma luta?</h1>
             <article>
                 <img id="Imagem" src="https://preview.redd.it/hydrogen-bomb-vs-coughing-baby-v0-libysfjp4djg1.jpeg?width=640&crop=smart&auto=webp&s=0ed7cacec1afe5a2eac32b7c886d0c6f789e343c"
@@ -18,28 +19,33 @@
             </article>
         </section>
     </header>
+
     <main id="respostas">
         <section class="respostas">
             <article>
                 <h2 id="opcao1" class="botao-texto" onclick="selectOption(0)">Bomba de hidrogênio</h2>
             </article>
         </section>
+
         <section>
             <article class="respostas">
-            <h2 id="opcao2" class="botao-texto" onclick="selectOption(1)">Bebe dormindo</h2>
+               <h2 id="opcao2" class="botao-texto" onclick="selectOption(1)">Bebe dormindo</h2>
             </article>
         </section>
+
     </main>
+
     <footer class="créditos">
         <section class="tela-escondida" id="tela-de-derrota">
             <article>
                 <h1 style="color: red;">PERDEU</h1>
                 <p>"AS RESPOSTAS SÃO CLARAS PARA O ALFA, MAS PARA O BETA ELAS SÃO DOLOROSAS"</p>
                 <img src="../assets/E2BeizhWQAMCXnc.jpg">
-                    <h2 class="botao-texto" onclick="recomeço()">RECOMEÇAR</h2>
-                    <a href="../../index.html">VOLTAR</a>
+                <h2 class="botao-texto" onclick="recomeço()">RECOMEÇAR</h2>
+                <a href="../../index.html">VOLTAR</a>
             </article>
         </section>
+
         <section class="tela-escondida" id="tela-de-vitoria">
             <article>
                 <h1 style="color: rgb(255, 255, 255);">PARABÉNS</h1>
@@ -49,14 +55,18 @@
                     <a href="../../index.html">VOLTAR</a>
             </article>
         </section>
+
         <section class="dica" id="dica">
             <button id="Botaodica" class="botao-texto">DICA</button>
             <p id="meuTexto" style="display: none;">PENSE MARK! O BEBE ESTA DORMINDO, NÃO IRÁ PODER SE DEFENDER</p>
-        <article>
-            <a href="../../index.html">VOLTAR</a>
-        </article>
+            <article>
+              <a href="../../index.html">VOLTAR</a>
+            </article>
         </section>
+
     </footer>
+
     <script src="../../script.js"></script>
+
 </body>
 </html>
