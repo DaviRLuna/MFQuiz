@@ -95,6 +95,13 @@ h1{
     background-repeat:repeat;
 }
 
+/*background usado na caixa que leva ao modo difícil*/
+#backgroundHd{
+    background-image: url("https://i.pinimg.com/736x/13/73/5b/13735b56f0c22aead3ce4e055ffe8f9c.jpg");
+    background-position: center;
+    background-size: contain;
+    background-repeat:repeat;
+}
 /*ID usado para estilizar o link que vai para outros modos*/
 #Link{
     color: rgb(0, 0, 0);

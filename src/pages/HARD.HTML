@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../style css/estrutura.css">
+    <title>Modo díficil</title>
+</head>
+<body>
+    
+    <header id="PerguntaHard">
+        <section class="CaixaCentral">
+            <h1 id="tituloHard">Em que dia exato foi a morte de napoleão bonaparte?</h1>
+            <article>
+                <img id="ImagemHard" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFpK1ZnyeLmPRyMtWmSm_r1yGhNsxcg-oVf1gxkvBShxgOqV-71JZdR-M&s=10"
+                height="200px"
+                width="400px";>
+            </article>
+        </section>
+    </header>
+
+    <main id="respostasHard">
+        <section class="respostas">
+            <article>
+                <h2 id="opcao1Hard" class="botao-texto" onclick="selectOption(0)">15 de maio de 1821</h2>
+            </article>
+        </section>
+
+        <section>
+            <article class="respostas">
+               <h2 id="opcao2Hard" class="botao-texto" onclick="selectOption(1)">5 de abril de 1821</h2>
+            </article>
+        </section>
+
+        <section>
+            <article class="respostas">
+               <h2 id="opcao3Hard" class="botao-texto" onclick="selectOption(2)">20 de março de 1821</h2>
+            </article>
+        </section>
+
+        <section>
+            <article class="respostas">
+               <h2 id="opcao4Hard" class="botao-texto" onclick="selectOption(3)">15 de abril de 1821</h2>
+            </article>
+        </section>
+
+
+    </main>
+
+    <footer class="créditos">
+        <section class="tela-escondida" id="tela-de-derrota-hard">
+            <article>
+                <h1 style="color: red;">PERDEU</h1>
+                <p>"AS RESPOSTAS SÃO CLARAS PARA O ALFA, MAS PARA O BETA ELAS SÃO DOLOROSAS"</p>
+                <img src="../assets/E2BeizhWQAMCXnc.jpg">
+                <h2 class="botao-texto" onclick="recomeço()">RECOMEÇAR</h2>
+                <a href="../../index.html">VOLTAR</a>
+            </article>
+        </section>
+
+        <section class="tela-escondida" id="tela-de-vitoria-hard">
+            <article>
+                <h1 style="color: rgb(255, 255, 255);">PARABÉNS</h1>
+                <p>UAU!Você conseguiu acertar dez perguntas selecionadas a dedo para serem IMPOSSIVEIS de responder. Simplesmente o cara</p>
+                <img src="../assets/uau.jpg">
+                    <h2 class="botao-texto" onclick="recomeço()">RECOMEÇAR</h2>
+                    <a href="../../index.html">VOLTAR</a>
+            </article>
+        </section>
+
+        <section class="dica" id="dicaHard">
+            <button id="BotaodicaHard" class="botao-texto">DICA</button>
+            <p id="meuTextoHard" style="display: none;">PENSE MARK, A DATA DA MORTE DE NAPOLEÃO É UMA DATA IMPORTANTE NA HISTÓRIA</p>
+            <article>
+              <a href="../../index.html">VOLTAR</a>
+            </article>
+        </section>
+
+    </footer>
+
+    <script src="../js/script-HardMode.js"></script>
+
+</body>
+</html>
