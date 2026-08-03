@@ -4,14 +4,14 @@ const botao =
 const dicatexto =
     document.getElementById("meuTexto");
 
-    botao.addEventListener("click", function() {
+    botao.addEventListener('click', function() {
         if (dicatexto.style.display === "none") {
             dicatexto.style.display = "block";
-            botao.innerText = "Fechar dica";
+            botao.innerText = "FECHAR DICA";
         } 
         else {
             dicatexto.style.display = "none";
-            botao.innerText = "dica";
+            botao.innerText = "DICA";
         }
     });
 
