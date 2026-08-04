@@ -1,2 +1,2 @@
-# MFQuiz
-Meu primeiro quiz, um teste
+# MFHGames
+Meu primeiro hub de jogos, um teste
