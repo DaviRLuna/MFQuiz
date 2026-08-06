@@ -77,6 +77,7 @@ const dicatexto =
         TVitoria.classList.add("tela-escondida");
 
         ShowQuestion();
+        window.scrollTo(0, 0);
     }
     
     function vitoria() {
@@ -93,6 +94,7 @@ const dicatexto =
         if(option === perguntaAtual.correta) {
 
             CurrentQuestionIndex++;
+            window.scrollTo(0, 0);
         
            if(CurrentQuestionIndex < quizFacilData.length) {
 
@@ -100,10 +102,12 @@ const dicatexto =
            }
            else {
                 vitoria();
+                window.scrollTo(0, 0);
            }
         }
         else {
             derrota();
+            window.scrollTo(0, 0);
         }
     }
     
