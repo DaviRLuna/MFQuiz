@@ -1,4 +1,12 @@
 body{
     background-color: rgb(25, 25, 153);
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+canvas{
+    border: 3px solid white;
+    margin: 0 auto;
+    display: block;
 }
